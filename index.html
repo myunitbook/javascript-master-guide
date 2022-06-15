@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client side</title>
+    <title>My Application</title>
     <style>
-        h1{ color: red; text-align: center;}
+       /* selector{property-name : value} */
+       .img{ width: 80%; height: 50vh; display: block; margin: auto;}
+       .tab{ display: flex;}
+       .tab li{ list-style: none; padding: 1%; background-color: tomato; margin-right: 1%; color:white;}
+
     </style>
 </head>
 <body>
-    <h1 id="data" style="color:blue;">Welcome to Client side</h1>
-    <h1>Welcome to Client side</h1>
-    <h1>Welcome to Client side</h1>
-    <h1>Welcome to Client side</h1>
+    <h1 id="demo">Welcome To HTML.</h1>
+    <ul class="tab">
+        <li onclick='document.getElementById("demo").innerHTML="Welcome to Javascript Module 1";'>Tab 1</li>
+        <li onclick='document.getElementById("demo").innerHTML="Welcome to Javascript Module 2";'>Tab 2</li>
+        <li onclick='document.getElementById("demo").innerHTML="Welcome to Javascript Module 3";'>Tab 3</li>
+        <li onclick='document.getElementById("demo").innerHTML="Welcome to Javascript Module 4";'>Tab 4</li>
+    </ul>
+    <script>
+        document.write("<h1>Hello In JavaScript</h1>");
+        document.write('<img src="image/banner.jpg" class="img" alt="Banner">');
+        document.getElementById("demo").innerHTML="Welcome to Javascript";
+    </script>
+    
 
-    <button onclick="document.getElementById('data').style.color='tomato'">blue</button>
+
     
 </body>
 </html>
